@@ -6,23 +6,69 @@
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            width: 22rem;
+            text-align: center;
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn-pink {
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .btn-pink:hover {
+            background-color: #d6458a;
+        }
+    </style>
 </head>
 <body>
-    <section class="pb-4" >
-            <h1 style="margin: 0 auto; text-align: center;" >Login</h1>
-            <section class="w-100 p-4 d-flex justify-content-center align-items-center pb-4" >
-                <form action="./backend/login.php" method="post" style="width: 22rem;" >
-                    <div class="form-outline mb-4" >            
-                        <input type="email" name="email" placeholder="masukkan email anda" class="form-control" >
-                    </div>
-                    <div class="form-outline mb-4" >
-                        <input type="password" name="password" placeholder="masukkan password anda" class="form-control" >
-                    </div>
-                    <div class="form-outline mb-4" >
-                        <input type="submit" value="login" name="submit" class="btn btn-primary" >
-                    </div>
-                </form>
-            </section>
+    <section class="login-container">
+        <h1>Login</h1>
+        <form action="./backend/login.php" method="post">
+            <div class="mb-4">
+                <input type="email" name="email" placeholder="Masukkan email Anda" class="form-control">
+            </div>
+            <div class="mb-4">
+                <input type="password" name="password" placeholder="Masukkan password Anda" class="form-control">
+            </div>
+            <div class="mb-4">
+                <input type="submit" value="Login" name="submit" class="btn btn-pink">
+            </div>
+        </form>
     </section>
 </body>
 </html>
