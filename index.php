@@ -53,6 +53,26 @@
         .btn-pink:hover {
             background-color: #d6458a;
         }
+
+        .notification {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            z-index: 9999;
+        }
+
+        .success {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .error {
+            background-color: #f44336;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -70,5 +90,20 @@
             </div>
         </form>
     </section>
+
+    <script>
+        // Fungsi untuk menampilkan notifikasi
+        function displayNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.innerHTML = message;
+
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.remove();
+            }, 3000); // Hapus notifikasi setelah 3 detik
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+UTS NO.1 & NO.2
+
+1. Apa yang dimaksud dengan framework pada pengembangan aplikasi?
+(jelaskan dengan bahasa yang mudah dimengerti, bukan secara
+harfiah/istilah)
+
+2. soal:
+
+1. Sebutkan tema proyek yang sedang digarap!
+2. Sebutkan anggota dari proyek yang sedang digarap, berikut dengan
+   jobdesk dari masing-masing anggota!
+3. Jelaskan permasalahan yang didapat setelah hasil wawancara dengan
+   client, beserta hipotesa solusi yang kalian usung! (jelaskan dengan
+   bahasa yang mudah dimengerti, bukan secara harfiah/istilah)
+
+Jawab:
+
+1. Jadi, secara sederhana, framework adalah alat bantu yang membantu pengembang 
+   membuat aplikasi dengan lebih cepat dan efisien, 
+   mirip dengan bagaimana kita menggunakan kerangka 
+   atau pondasi yang sudah ada saat membangun rumah. 
+   Atau juga bisa disebut template atau blue print.
+
+2. Jawaban rincian:
+
+    1. Tema: Koperasi
+    2. - Nova Puspita Khairani (22416255201209): Membuat UML dan laporan
+       - Farah Amany Zahra (22416255201210): Merancang data base
+       - Astri Agustiyani (22416255201008): Membuat Web
+    3. - Masalah:
+        1. Admin masih memasukkan data secara manual menggunakan excel
+        2. Anggota masih harus datang ke kantor untuk mengajukan pinjaman
+       - Solusi:
+        1. Admin dibuatkan fitur rekap data yang menampilkan data anggota koperasi 
+        2. Anggota di buatkan fitur pengajuan pinjaman,
+           sehingga anggota hanya perlu datang ke kantor untuk persyaratan jika
+           ajuan peminjaman telah di accept

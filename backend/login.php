@@ -24,12 +24,12 @@ if(isset($_POST['submit'])) {
 
            
         } else {
-            echo "password salah";
+            echo "Password salah";
             die;
         }
 
     } else {
-        echo "email atau password salah";
+        echo "Email atau Password salah";
         die;
     }
 }
